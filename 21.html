@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Define a CSS class for card rotation */
+img{
+    animation: rotate 0.5s 2 ease-in-out;
+   
+}
+
+/* Define the animation keyframes for rotation */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <h1>21</h1>
+    <h3>wanna play?
+    </h3>
+    <h5 id="cards">cards :</h5>
+    <h5 id="sum">sum :</h5>
+    <div></div>
+    <h4 id="ctotal">Computer Total</h4>
+    <button onclick="startgame()">Start game</button>
+    <button onclick="newcard()"">Add new card</button>
+    <button onclick="winner()">result</button>
+    <p id="message"></p>
+    <script src="./21.js"></script>
+</body>
+</html>
